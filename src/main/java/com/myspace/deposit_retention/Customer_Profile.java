@@ -18,7 +18,8 @@ public class Customer_Profile implements java.io.Serializable {
 
 	private java.lang.Boolean outFlow;
 
-	
+	private java.util.Date accountPaymentDueDate;
+
 	public Customer_Profile() {
 	}
 
@@ -70,16 +71,25 @@ public class Customer_Profile implements java.io.Serializable {
 		this.outFlow = outFlow;
 	}
 
+	public java.util.Date getAccountPaymentDueDate() {
+		return this.accountPaymentDueDate;
+	}
+
+	public void setAccountPaymentDueDate(java.util.Date accountPaymentDueDate) {
+		this.accountPaymentDueDate = accountPaymentDueDate;
+	}
+
 	public Customer_Profile(java.lang.String ccid, java.lang.String firstName,
 			java.lang.String lastName, java.lang.Boolean thirdPartyTransfer,
-			java.lang.Boolean inFlow, java.lang.Boolean outFlow) {
+			java.lang.Boolean inFlow, java.lang.Boolean outFlow,
+			java.util.Date accountPaymentDueDate) {
 		this.ccid = ccid;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.thirdPartyTransfer = thirdPartyTransfer;
 		this.inFlow = inFlow;
 		this.outFlow = outFlow;
-		
+		this.accountPaymentDueDate = accountPaymentDueDate;
 	}
 
 }
