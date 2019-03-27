@@ -32,20 +32,6 @@
           <parameters/>
           <binding></binding>
         </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>STRING</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>DateOperation</header>
-          <constraintValueType>5</constraintValueType>
-          <factField>event.getEVENT_DATE().compareTo(customer.getAccount().getAccountPaymentDueDate()) &gt; 0</factField>
-          <operator>--- please choose ---</operator>
-          <parameters/>
-        </condition-column52>
       </conditions>
       <window>
         <parameters/>
@@ -161,11 +147,6 @@
       </value>
       <value>
         <valueString>ONLINE_LOGIN</valueString>
-        <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueString></valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
