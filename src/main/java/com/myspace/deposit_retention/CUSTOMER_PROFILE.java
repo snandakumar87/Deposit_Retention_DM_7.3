@@ -6,12 +6,44 @@ package com.myspace.deposit_retention;
 
 public class CUSTOMER_PROFILE implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public CUSTOMER_PROFILE() {
-    }
+	private java.lang.String ccid;
+	private java.lang.String firstName;
+	private java.lang.String lastName;
 
+	public CUSTOMER_PROFILE() {
+	}
 
+	public java.lang.String getCcid() {
+		return this.ccid;
+	}
 
+	public void setCcid(java.lang.String ccid) {
+		this.ccid = ccid;
+	}
+
+	public java.lang.String getFirstName() {
+		return this.firstName;
+	}
+
+	public void setFirstName(java.lang.String firstName) {
+		this.firstName = firstName;
+	}
+
+	public java.lang.String getLastName() {
+		return this.lastName;
+	}
+
+	public void setLastName(java.lang.String lastName) {
+		this.lastName = lastName;
+	}
+
+	public CUSTOMER_PROFILE(java.lang.String ccid, java.lang.String firstName,
+			java.lang.String lastName) {
+		this.ccid = ccid;
+		this.firstName = firstName;
+		this.lastName = lastName;
+	}
 
 }
