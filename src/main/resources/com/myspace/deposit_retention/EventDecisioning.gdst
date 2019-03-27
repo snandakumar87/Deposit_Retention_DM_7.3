@@ -108,7 +108,7 @@
           <constraintList>
             <constraints>
               <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <value>new Date()</value>
+                <value>new java.util.Date()</value>
                 <operator>&lt;</operator>
                 <constraintValueType>3</constraintValueType>
                 <expression>
