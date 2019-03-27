@@ -6,12 +6,34 @@ package com.myspace.deposit_retention;
 
 public class Account implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Account() {
-    }
+	private java.lang.String accountNumber;
+	private java.util.Date accountPaymentDueDate;
 
+	public Account() {
+	}
 
+	public java.lang.String getAccountNumber() {
+		return this.accountNumber;
+	}
 
+	public void setAccountNumber(java.lang.String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+
+	public java.util.Date getAccountPaymentDueDate() {
+		return this.accountPaymentDueDate;
+	}
+
+	public void setAccountPaymentDueDate(java.util.Date accountPaymentDueDate) {
+		this.accountPaymentDueDate = accountPaymentDueDate;
+	}
+
+	public Account(java.lang.String accountNumber,
+			java.util.Date accountPaymentDueDate) {
+		this.accountNumber = accountNumber;
+		this.accountPaymentDueDate = accountPaymentDueDate;
+	}
 
 }
