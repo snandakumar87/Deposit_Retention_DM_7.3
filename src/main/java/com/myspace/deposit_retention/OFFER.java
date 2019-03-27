@@ -6,12 +6,23 @@ package com.myspace.deposit_retention;
 
 public class OFFER implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public OFFER() {
-    }
+	private java.lang.String OFFER_NAME;
 
+	public OFFER() {
+	}
 
+	public java.lang.String getOFFER_NAME() {
+		return this.OFFER_NAME;
+	}
 
+	public void setOFFER_NAME(java.lang.String OFFER_NAME) {
+		this.OFFER_NAME = OFFER_NAME;
+	}
+
+	public OFFER(java.lang.String OFFER_NAME) {
+		this.OFFER_NAME = OFFER_NAME;
+	}
 
 }
