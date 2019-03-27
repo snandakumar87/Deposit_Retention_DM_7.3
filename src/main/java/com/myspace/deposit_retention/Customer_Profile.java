@@ -14,6 +14,12 @@ public class Customer_Profile implements java.io.Serializable {
 
 	private java.util.List<com.myspace.deposit_retention.Account> account;
 
+	private java.lang.Boolean thirdPartyTransfer;
+
+	private java.lang.Boolean inFlow;
+
+	private java.lang.Boolean outFlow;
+
 	public Customer_Profile() {
 	}
 
@@ -50,13 +56,42 @@ public class Customer_Profile implements java.io.Serializable {
 		this.account = account;
 	}
 
+	public java.lang.Boolean getThirdPartyTransfer() {
+		return this.thirdPartyTransfer;
+	}
+
+	public void setThirdPartyTransfer(java.lang.Boolean thirdPartyTransfer) {
+		this.thirdPartyTransfer = thirdPartyTransfer;
+	}
+
+	public java.lang.Boolean getInFlow() {
+		return this.inFlow;
+	}
+
+	public void setInFlow(java.lang.Boolean inFlow) {
+		this.inFlow = inFlow;
+	}
+
+	public java.lang.Boolean getOutFlow() {
+		return this.outFlow;
+	}
+
+	public void setOutFlow(java.lang.Boolean outFlow) {
+		this.outFlow = outFlow;
+	}
+
 	public Customer_Profile(java.lang.String ccid, java.lang.String firstName,
 			java.lang.String lastName,
-			java.util.List<com.myspace.deposit_retention.Account> account) {
+			java.util.List<com.myspace.deposit_retention.Account> account,
+			java.lang.Boolean thirdPartyTransfer, java.lang.Boolean inFlow,
+			java.lang.Boolean outFlow) {
 		this.ccid = ccid;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.account = account;
+		this.thirdPartyTransfer = thirdPartyTransfer;
+		this.inFlow = inFlow;
+		this.outFlow = outFlow;
 	}
 
 }
