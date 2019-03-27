@@ -104,72 +104,9 @@
       <constraintValueType>1</constraintValueType>
       <parameters/>
       <definition>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <constraintList>
-            <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-                <value></value>
-                <constraintValueType>0</constraintValueType>
-                <expression>
-                  <parts/>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Customer_Profile</factType>
-                <fieldName>after</fieldName>
-                <fieldType>boolean</fieldType>
-                <expLeftSide>
-                  <parts>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact" reference="../.."/>
-                        <next class="org.drools.workbench.models.datamodel.rule.ExpressionMethod">
-                          <prev class="org.drools.workbench.models.datamodel.rule.ExpressionField" reference="../.."/>
-                          <name>after</name>
-                          <classType>boolean</classType>
-                          <genericType>Boolean</genericType>
-                          <params>
-                            <entry>
-                              <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                                <index>0</index>
-                                <dataType>Date</dataType>
-                              </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameterDefinition>
-                              <org.drools.workbench.models.datamodel.rule.ExpressionFormLine>
-                                <parts>
-                                  <org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                                    <name>new Date()</name>
-                                    <classType>Date</classType>
-                                    <genericType>Date</genericType>
-                                  </org.drools.workbench.models.datamodel.rule.ExpressionMethodParameter>
-                                </parts>
-                                <index>0</index>
-                              </org.drools.workbench.models.datamodel.rule.ExpressionFormLine>
-                            </entry>
-                          </params>
-                        </next>
-                        <name>accountPaymentDueDate</name>
-                        <classType>java.util.Date</classType>
-                        <genericType>Date</genericType>
-                      </next>
-                      <name>Customer_Profile</name>
-                      <classType>Customer_Profile</classType>
-                      <genericType>Customer_Profile</genericType>
-                      <factType>Customer_Profile</factType>
-                    </org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next"/>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionMethod reference="../org.drools.workbench.models.datamodel.rule.ExpressionUnboundFact/next/next"/>
-                  </parts>
-                  <index>2147483647</index>
-                </expLeftSide>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraintEBLeftSide>
-            </constraints>
-          </constraintList>
-          <factType>Customer_Profile</factType>
-          <isNegated>false</isNegated>
-          <window>
-            <parameters/>
-          </window>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
+        <org.drools.workbench.models.datamodel.rule.FreeFormLine>
+          <text>customer.getAccountPaymentDueDate().compareTo(new Date()) &gt; 0</text>
+        </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
