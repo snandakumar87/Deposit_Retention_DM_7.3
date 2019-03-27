@@ -18,6 +18,8 @@ public class Customer_Profile implements java.io.Serializable {
 
 	private java.lang.Boolean outFlow;
 
+	private com.myspace.deposit_retention.Account account;
+
 	public Customer_Profile() {
 	}
 
@@ -69,15 +71,25 @@ public class Customer_Profile implements java.io.Serializable {
 		this.outFlow = outFlow;
 	}
 
+	public com.myspace.deposit_retention.Account getAccount() {
+		return this.account;
+	}
+
+	public void setAccount(com.myspace.deposit_retention.Account account) {
+		this.account = account;
+	}
+
 	public Customer_Profile(java.lang.String ccid, java.lang.String firstName,
 			java.lang.String lastName, java.lang.Boolean thirdPartyTransfer,
-			java.lang.Boolean inFlow, java.lang.Boolean outFlow) {
+			java.lang.Boolean inFlow, java.lang.Boolean outFlow,
+			com.myspace.deposit_retention.Account account) {
 		this.ccid = ccid;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.thirdPartyTransfer = thirdPartyTransfer;
 		this.inFlow = inFlow;
 		this.outFlow = outFlow;
+		this.account = account;
 	}
 
 }
