@@ -105,13 +105,13 @@
       <parameters/>
       <definition>
         <org.drools.workbench.models.datamodel.rule.FreeFormLine>
-          <text>customer.getAccountPaymentDueDate().compareTo(new Date())</text>
+          <text>customer.getAccountPaymentDueDate().compareTo(new Date()) &gt; 0</text>
         </org.drools.workbench.models.datamodel.rule.FreeFormLine>
       </definition>
       <childColumns>
         <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
           <hideColumn>false</hideColumn>
-          <width>185</width>
+          <width>100</width>
           <header>BEFORE_PAYMENT_DATE</header>
           <constraintValueType>1</constraintValueType>
           <fieldType>Boolean</fieldType>
