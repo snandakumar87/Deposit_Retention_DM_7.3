@@ -12,6 +12,8 @@ public class Customer_Profile implements java.io.Serializable {
 	private java.lang.String firstName;
 	private java.lang.String lastName;
 
+	private java.util.List<com.myspace.deposit_retention.Account> account;
+
 	public Customer_Profile() {
 	}
 
@@ -39,11 +41,22 @@ public class Customer_Profile implements java.io.Serializable {
 		this.lastName = lastName;
 	}
 
+	public java.util.List<com.myspace.deposit_retention.Account> getAccount() {
+		return this.account;
+	}
+
+	public void setAccount(
+			java.util.List<com.myspace.deposit_retention.Account> account) {
+		this.account = account;
+	}
+
 	public Customer_Profile(java.lang.String ccid, java.lang.String firstName,
-			java.lang.String lastName) {
+			java.lang.String lastName,
+			java.util.List<com.myspace.deposit_retention.Account> account) {
 		this.ccid = ccid;
 		this.firstName = firstName;
 		this.lastName = lastName;
+		this.account = account;
 	}
 
 }
