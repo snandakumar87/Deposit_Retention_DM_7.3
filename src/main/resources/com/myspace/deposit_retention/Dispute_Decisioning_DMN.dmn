@@ -26,7 +26,7 @@
     <dmn:variable id="_0B38E26E-2562-470E-9193-06151F2FC639" name="Event" typeRef="Any"/>
   </dmn:inputData>
   <dmn:decision id="_A214E0A8-763D-428B-B071-488E02A88859" name="Channel Specific Rules">
-    <dmn:variable id="_CE9C0B2B-F3DD-4983-BEA0-2CC38E8DD1F3" name="Channel Specific Rules" typeRef="Any"/>
+    <dmn:variable id="_CE9C0B2B-F3DD-4983-BEA0-2CC38E8DD1F3" name="Channel Specific Rules" typeRef="string"/>
     <dmn:informationRequirement id="_81336FC1-87F7-4B1C-988D-21C7E81D78E6">
       <dmn:requiredDecision href="#_A5B0C293-F704-4299-98D4-A2A0F9945BE6"/>
     </dmn:informationRequirement>
@@ -44,7 +44,7 @@
           <dmn:text>Channel</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_1EF819E9-E89F-4F21-BAF8-A59EC7BBB363" typeRef="Any"/>
+      <dmn:output id="_1EF819E9-E89F-4F21-BAF8-A59EC7BBB363" typeRef="string"/>
       <dmn:rule id="_7D9547C5-2CE8-4813-8FA5-E96D00636A58">
         <dmn:inputEntry id="_1FB6FAA7-C5BA-4561-8A8E-C6A78DC8084D">
           <dmn:text>DEPOSIT_RETENTION_OFFER</dmn:text>
