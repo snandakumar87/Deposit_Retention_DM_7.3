@@ -25,28 +25,6 @@
   <dmn:inputData id="_16B62630-A735-4876-9BF1-6A2D442D7DF2" name="Event">
     <dmn:variable id="_0B38E26E-2562-470E-9193-06151F2FC639" name="Event" typeRef="Any"/>
   </dmn:inputData>
-  <dmn:decision id="_D3324803-94FB-4F62-A2CA-D8F7F782D367" name="Channel Specific Rules">
-    <dmn:variable id="_EDCAA0EF-EB06-4EB1-BDFC-AA2D56750C9C" name="Channel Specific Rules" typeRef="string"/>
-    <dmn:informationRequirement id="_6130AE64-46FA-4D90-B0E7-7BE13E1A3F0A">
-      <dmn:requiredInput href="#_C87FC47A-3DDA-49E4-BDDB-FBBA42886CCD"/>
-    </dmn:informationRequirement>
-    <dmn:decisionTable id="_056EAB4B-4B82-4790-86D6-FAAADF134BEB" typeRef="Any" hitPolicy="ANY" preferredOrientation="Rule-as-Row">
-      <dmn:input id="_29F640D1-E1ED-4974-905C-75E7B71EF272">
-        <dmn:inputExpression id="_A9FA4C54-2659-4658-8476-3271A0567C91" typeRef="string">
-          <dmn:text>Channel</dmn:text>
-        </dmn:inputExpression>
-      </dmn:input>
-      <dmn:output id="_8B735B79-7413-4899-B8AB-1D9A52C5E794" typeRef="string"/>
-      <dmn:rule id="_D280E67E-0D84-4B97-A23E-B173E4014482">
-        <dmn:inputEntry id="_289761F6-0761-4B5E-92D7-964840B0D09B">
-          <dmn:text>DIGITAL</dmn:text>
-        </dmn:inputEntry>
-        <dmn:outputEntry id="_A697F3BC-DC33-49DE-8D8C-7F5711FAC7EF" typeRef="Any">
-          <dmn:text>DEPOSIT_RETENTION_OFFER_1</dmn:text>
-        </dmn:outputEntry>
-      </dmn:rule>
-    </dmn:decisionTable>
-  </dmn:decision>
   <dmn:decision id="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" name="Deposit Retention">
     <dmn:variable id="_613FFB0B-9C65-4B22-9AF4-57AA4E0CCB04" name="Deposit Retention" typeRef="string"/>
     <dmn:informationRequirement id="_D5A4A5A6-910E-486C-A842-9F98059C1D37">
@@ -119,15 +97,6 @@
         <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="801.2990654205607" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_D3324803-94FB-4F62-A2CA-D8F7F782D367" dmnElementRef="_D3324803-94FB-4F62-A2CA-D8F7F782D367" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="1014" y="60" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_3430FF7F-F427-4890-901B-F7D39565377B" dmnElementRef="_3430FF7F-F427-4890-901B-F7D39565377B" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -191,10 +160,6 @@
         <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="1197" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_6130AE64-46FA-4D90-B0E7-7BE13E1A3F0A" dmnElementRef="_6130AE64-46FA-4D90-B0E7-7BE13E1A3F0A">
-        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="1247" y="409"/>
-        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="1064" y="85"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_D180572A-DF18-4FB9-8906-9DF2A75566AA" dmnElementRef="_D180572A-DF18-4FB9-8906-9DF2A75566AA">
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="275" y="409"/>
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="427" y="289"/>
