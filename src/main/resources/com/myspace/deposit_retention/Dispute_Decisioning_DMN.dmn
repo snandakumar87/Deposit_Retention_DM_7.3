@@ -27,9 +27,6 @@
   </dmn:inputData>
   <dmn:decision id="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" name="Deposit Retention">
     <dmn:variable id="_613FFB0B-9C65-4B22-9AF4-57AA4E0CCB04" name="Deposit Retention" typeRef="Any"/>
-    <dmn:informationRequirement id="_05C244EB-D9FB-4534-A0B1-17A8C3707396">
-      <dmn:requiredDecision href="#_FCD23FA6-967F-4D1A-AB34-1665133C8502"/>
-    </dmn:informationRequirement>
     <dmn:informationRequirement id="_D5A4A5A6-910E-486C-A842-9F98059C1D37">
       <dmn:requiredInput href="#_16B62630-A735-4876-9BF1-6A2D442D7DF2"/>
     </dmn:informationRequirement>
@@ -140,10 +137,6 @@
         <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="399" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNEdge id="dmnedge-_05C244EB-D9FB-4534-A0B1-17A8C3707396" dmnElementRef="_05C244EB-D9FB-4534-A0B1-17A8C3707396">
-        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="427" y="289"/>
-        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="803" y="262"/>
-      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_D5A4A5A6-910E-486C-A842-9F98059C1D37" dmnElementRef="_D5A4A5A6-910E-486C-A842-9F98059C1D37">
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="669.2990654205607" y="409"/>
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="803" y="262"/>
