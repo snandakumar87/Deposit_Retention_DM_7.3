@@ -26,7 +26,7 @@
     <dmn:variable id="_0B38E26E-2562-470E-9193-06151F2FC639" name="Event" typeRef="Any"/>
   </dmn:inputData>
   <dmn:decision id="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" name="Deposit Retention">
-    <dmn:variable id="_613FFB0B-9C65-4B22-9AF4-57AA4E0CCB04" name="Deposit Retention" typeRef="Any"/>
+    <dmn:variable id="_613FFB0B-9C65-4B22-9AF4-57AA4E0CCB04" name="Deposit Retention" typeRef="string"/>
     <dmn:informationRequirement id="_D5A4A5A6-910E-486C-A842-9F98059C1D37">
       <dmn:requiredInput href="#_16B62630-A735-4876-9BF1-6A2D442D7DF2"/>
     </dmn:informationRequirement>
@@ -41,33 +41,41 @@
     </dmn:informationRequirement>
     <dmn:decisionTable id="_18EEFD97-DF69-401D-A3D3-BFE459150D86" typeRef="Any" hitPolicy="ANY" preferredOrientation="Rule-as-Row">
       <dmn:input id="_B7B1E89B-0CB7-4EDC-A2D3-048C55F010EB">
-        <dmn:inputExpression id="_04E13F1F-15C5-4E10-B3FA-CA6CEAA669FF" typeRef="Any">
+        <dmn:inputExpression id="_04E13F1F-15C5-4E10-B3FA-CA6CEAA669FF" typeRef="boolean">
           <dmn:text>Cash Inflow</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_ECAA95BE-D79F-4ADB-8A44-16C31F4B5564">
-        <dmn:inputExpression id="_9474D0F9-81BB-411B-BA14-50296E79EB56" typeRef="Any">
+        <dmn:inputExpression id="_9474D0F9-81BB-411B-BA14-50296E79EB56" typeRef="boolean">
           <dmn:text>Cash Outflow</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
       <dmn:input id="_00DB5019-56E6-4CD2-8E13-9DFFD8384B77">
-        <dmn:inputExpression id="_F0585D44-CF34-4B4F-8583-D42CC957D7CB" typeRef="Any">
+        <dmn:inputExpression id="_F0585D44-CF34-4B4F-8583-D42CC957D7CB" typeRef="string">
           <dmn:text>Event</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_8DE18532-1732-4E44-8265-0528BB02252F" typeRef="Any"/>
+      <dmn:input id="_01DD564A-F4C1-4481-BCB7-E1E43AB41E80">
+        <dmn:inputExpression id="_07BF2ED4-DDE3-4F73-8811-B0AFD86C2218" typeRef="string">
+          <dmn:text>Proactive</dmn:text>
+        </dmn:inputExpression>
+      </dmn:input>
+      <dmn:output id="_8DE18532-1732-4E44-8265-0528BB02252F" typeRef="string"/>
       <dmn:rule id="_0D754585-3028-4DEF-A1FD-CD6EBC124EA7">
         <dmn:inputEntry id="_E346985B-38CE-4B79-A2BD-56B31135BC29">
-          <dmn:text></dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_5EF36447-2377-425B-A811-1B95329D258B">
           <dmn:text></dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_5F02F91C-3F24-4215-85C2-D982A8800D47">
-          <dmn:text></dmn:text>
+          <dmn:text>CUSTOMER_LOGIN</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_7ED9EA0C-74F6-44A1-8C58-CBEDBC7CB7B7">
+          <dmn:text>TRUE</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_58983140-2A17-466B-AF9F-D7C2688BEF9E" typeRef="Any">
-          <dmn:text></dmn:text>
+          <dmn:text>DEPOSIT_RETENTION_OFFER</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
