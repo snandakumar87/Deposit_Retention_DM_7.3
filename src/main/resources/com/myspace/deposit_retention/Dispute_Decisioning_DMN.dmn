@@ -94,7 +94,7 @@
     <dmn:informationRequirement id="_8544CB34-B612-4DC0-90E6-78E7A5091345">
       <dmn:requiredDecision href="#_FCD23FA6-967F-4D1A-AB34-1665133C8502"/>
     </dmn:informationRequirement>
-    <dmn:decisionTable id="_18EEFD97-DF69-401D-A3D3-BFE459150D86" typeRef="Any" hitPolicy="ANY" preferredOrientation="Rule-as-Row">
+    <dmn:decisionTable id="_18EEFD97-DF69-401D-A3D3-BFE459150D86" typeRef="Any" hitPolicy="FIRST" preferredOrientation="Rule-as-Row">
       <dmn:input id="_B7B1E89B-0CB7-4EDC-A2D3-048C55F010EB">
         <dmn:inputExpression id="_04E13F1F-15C5-4E10-B3FA-CA6CEAA669FF" typeRef="boolean">
           <dmn:text>Cash Inflow</dmn:text>
