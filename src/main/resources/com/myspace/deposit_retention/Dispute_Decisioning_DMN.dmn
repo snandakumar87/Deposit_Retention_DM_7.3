@@ -47,35 +47,35 @@
       <dmn:output id="_1EF819E9-E89F-4F21-BAF8-A59EC7BBB363" typeRef="string"/>
       <dmn:rule id="_7D9547C5-2CE8-4813-8FA5-E96D00636A58">
         <dmn:inputEntry id="_1FB6FAA7-C5BA-4561-8A8E-C6A78DC8084D">
-          <dmn:text>DEPOSIT_RETENTION_OFFER</dmn:text>
+          <dmn:text>"DEPOSIT_RETENTION_OFFER"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_92A77D25-6CF2-42CC-994F-F0E0322A33D0">
-          <dmn:text>DIGITAL</dmn:text>
+          <dmn:text>"DIGITAL"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_FF503FC6-D609-4F8C-BD00-4F0941E6A2F7" typeRef="Any">
-          <dmn:text>RETAIL_OFFER_1</dmn:text>
+          <dmn:text>"RETAIL_OFFER_1"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_111963F8-68E0-45B7-A35D-C38BAD17FB13">
         <dmn:inputEntry id="_3EF2B397-EBF4-4384-A81C-165153F87202">
-          <dmn:text>DEPOSIT_RETENTION_OFFER</dmn:text>
+          <dmn:text>"DEPOSIT_RETENTION_OFFER"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_605E7767-0D6E-45AE-B2E9-B00AA6124403">
-          <dmn:text>BYPHONE</dmn:text>
+          <dmn:text>"BYPHONE"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_25D98A8F-6866-4F9C-8A0D-681C48E18E3D" typeRef="Any">
-          <dmn:text>RETAIL_OFFER_2</dmn:text>
+          <dmn:text>"RETAIL_OFFER_2"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_C8F885B5-C421-4700-898E-0C140D8567BF">
         <dmn:inputEntry id="_C167A100-1B90-4376-B03D-E10D23A946B7">
-          <dmn:text>DEPOSIT_RETENTION_OFFER</dmn:text>
+          <dmn:text>"DEPOSIT_RETENTION_OFFER"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_13552910-A110-4B0A-8666-3F96C202974B">
-          <dmn:text>EMAIL</dmn:text>
+          <dmn:text>"EMAIL"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C64EDD84-2CBF-4366-9DA2-81B6FBC857DD" typeRef="Any">
-          <dmn:text>RETAIL_OFFER_3</dmn:text>
+          <dmn:text>"RETAIL_OFFER_3"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
