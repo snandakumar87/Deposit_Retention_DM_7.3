@@ -36,6 +36,9 @@
     <dmn:informationRequirement id="_700587EB-2FEF-4DF7-A74E-3DC2EE766433">
       <dmn:requiredInput href="#_3430FF7F-F427-4890-901B-F7D39565377B"/>
     </dmn:informationRequirement>
+    <dmn:informationRequirement id="_8544CB34-B612-4DC0-90E6-78E7A5091345">
+      <dmn:requiredDecision href="#_FCD23FA6-967F-4D1A-AB34-1665133C8502"/>
+    </dmn:informationRequirement>
     <dmn:decisionTable id="_18EEFD97-DF69-401D-A3D3-BFE459150D86" typeRef="Any" hitPolicy="ANY" preferredOrientation="Rule-as-Row">
       <dmn:input id="_B7B1E89B-0CB7-4EDC-A2D3-048C55F010EB">
         <dmn:inputExpression id="_04E13F1F-15C5-4E10-B3FA-CA6CEAA669FF" typeRef="Any">
@@ -83,22 +86,13 @@
         <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="801.2990654205607" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_A5B0C293-F704-4299-98D4-A2A0F9945BE6" dmnElementRef="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_3430FF7F-F427-4890-901B-F7D39565377B" dmnElementRef="_3430FF7F-F427-4890-901B-F7D39565377B" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="753" y="237" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_16B62630-A735-4876-9BF1-6A2D442D7DF2" dmnElementRef="_16B62630-A735-4876-9BF1-6A2D442D7DF2" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="619.2990654205607" y="384" width="100" height="50"/>
+        <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="982" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_FCD23FA6-967F-4D1A-AB34-1665133C8502" dmnElementRef="_FCD23FA6-967F-4D1A-AB34-1665133C8502" isCollapsed="false">
@@ -119,13 +113,22 @@
         <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="225" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_3430FF7F-F427-4890-901B-F7D39565377B" dmnElementRef="_3430FF7F-F427-4890-901B-F7D39565377B" isCollapsed="false">
+      <dmndi:DMNShape id="dmnshape-_16B62630-A735-4876-9BF1-6A2D442D7DF2" dmnElementRef="_16B62630-A735-4876-9BF1-6A2D442D7DF2" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="982" y="384" width="100" height="50"/>
+        <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="619.2990654205607" y="384" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_A5B0C293-F704-4299-98D4-A2A0F9945BE6" dmnElementRef="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="753" y="237" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_7A521FE6-B8F5-47EA-841C-49C3A32992DD" dmnElementRef="_7A521FE6-B8F5-47EA-841C-49C3A32992DD" isCollapsed="false">
@@ -137,6 +140,14 @@
         <dc:Bounds xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" x="399" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNEdge id="dmnedge-_D180572A-DF18-4FB9-8906-9DF2A75566AA" dmnElementRef="_D180572A-DF18-4FB9-8906-9DF2A75566AA">
+        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="275" y="409"/>
+        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="427" y="289"/>
+      </dmndi:DMNEdge>
+      <dmndi:DMNEdge id="dmnedge-_662D2F9B-479F-472F-9BFE-4E89A3E8BA67" dmnElementRef="_662D2F9B-479F-472F-9BFE-4E89A3E8BA67">
+        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="449" y="409"/>
+        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="427" y="289"/>
+      </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_D5A4A5A6-910E-486C-A842-9F98059C1D37" dmnElementRef="_D5A4A5A6-910E-486C-A842-9F98059C1D37">
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="669.2990654205607" y="409"/>
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="803" y="262"/>
@@ -149,13 +160,9 @@
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="1032" y="409"/>
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="803" y="262"/>
       </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_D180572A-DF18-4FB9-8906-9DF2A75566AA" dmnElementRef="_D180572A-DF18-4FB9-8906-9DF2A75566AA">
-        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="275" y="409"/>
+      <dmndi:DMNEdge id="dmnedge-_8544CB34-B612-4DC0-90E6-78E7A5091345" dmnElementRef="_8544CB34-B612-4DC0-90E6-78E7A5091345">
         <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="427" y="289"/>
-      </dmndi:DMNEdge>
-      <dmndi:DMNEdge id="dmnedge-_662D2F9B-479F-472F-9BFE-4E89A3E8BA67" dmnElementRef="_662D2F9B-479F-472F-9BFE-4E89A3E8BA67">
-        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="449" y="409"/>
-        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="427" y="289"/>
+        <di:waypoint xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" x="803" y="262"/>
       </dmndi:DMNEdge>
     </dmndi:DMNDiagram>
   </dmndi:DMNDI>
