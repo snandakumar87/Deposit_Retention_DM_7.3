@@ -72,7 +72,7 @@
           <dmn:text>"CUSTOMER_LOGIN"</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_7ED9EA0C-74F6-44A1-8C58-CBEDBC7CB7B7">
-          <dmn:text>TRUE</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_58983140-2A17-466B-AF9F-D7C2688BEF9E" typeRef="Any">
           <dmn:text>"DEPOSIT_RETENTION_OFFER"</dmn:text>
