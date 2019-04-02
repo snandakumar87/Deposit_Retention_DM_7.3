@@ -35,5 +35,15 @@ public class OFFER implements java.io.Serializable {
 		this.OFFER_NAME = OFFER_NAME;
 		this.offerDesc = offerDesc;
 	}
+	
+	public boolean equals(Object obj) 
+    {
+        OFFER offer = (OFFER)obj;
+        return offer.getOFFER_NAME().equals(this.getOFFER_NAME());
+    }
+    public int hashCode() 
+    {
+     return 1;   
+    }
 
 }
