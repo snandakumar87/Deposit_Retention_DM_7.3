@@ -2,10 +2,10 @@
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://github.com/kiegroup/drools/kie-dmn/_73328450-AA85-4769-8D87-AAA96AE9F8E7" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_69976D01-B650-4FF6-BF65-26E422BA572D" name="Event" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://github.com/kiegroup/drools/kie-dmn/_73328450-AA85-4769-8D87-AAA96AE9F8E7">
   <dmn:extensionElements/>
   <dmn:inputData id="_AD3A626C-36A8-4565-BB71-A57336655A48" name="Cash Inflow">
-    <dmn:variable id="_D2809FD9-592B-4EDD-A620-F4E72485FA22" name="Cash Inflow" typeRef="string"/>
+    <dmn:variable id="_D2809FD9-592B-4EDD-A620-F4E72485FA22" name="Cash Inflow" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:inputData id="_3430FF7F-F427-4890-901B-F7D39565377B" name="Cash Outflow">
-    <dmn:variable id="_C84D8E20-EC64-41B5-A7A8-36B79B3D4347" name="Cash Outflow" typeRef="string"/>
+    <dmn:variable id="_C84D8E20-EC64-41B5-A7A8-36B79B3D4347" name="Cash Outflow" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:decision id="_A214E0A8-763D-428B-B071-488E02A88859" name="Channel Specific Rules">
     <dmn:variable id="_CE9C0B2B-F3DD-4983-BEA0-2CC38E8DD1F3" name="Channel Specific Rules" typeRef="string"/>
