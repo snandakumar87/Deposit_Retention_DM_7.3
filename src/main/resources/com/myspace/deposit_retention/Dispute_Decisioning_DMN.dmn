@@ -87,7 +87,7 @@
     </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_16B62630-A735-4876-9BF1-6A2D442D7DF2" name="Event">
-    <dmn:variable id="_0B38E26E-2562-470E-9193-06151F2FC639" name="Event" typeRef="Any"/>
+    <dmn:variable id="_0B38E26E-2562-470E-9193-06151F2FC639" name="Event" typeRef="string"/>
   </dmn:inputData>
   <dmn:decision id="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" name="Deposit Retention">
     <dmn:variable id="_613FFB0B-9C65-4B22-9AF4-57AA4E0CCB04" name="Deposit Retention" typeRef="string"/>
