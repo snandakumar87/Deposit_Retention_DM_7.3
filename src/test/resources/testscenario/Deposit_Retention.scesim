@@ -307,7 +307,7 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[8]/expressionIdentifier"/>
-            <rawValue class="string">&quot;DEPOSIT_RETENTION&quot;</rawValue>
+            <rawValue class="string">&quot;DEPOSIT_RETENTION_OFFER&quot;</rawValue>
           </FactMappingValue>
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/factIdentifier"/>
