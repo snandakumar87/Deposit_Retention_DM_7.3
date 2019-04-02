@@ -91,6 +91,27 @@
           <factAlias>OFFER</factAlias>
           <expressionAlias>OFFER_NAME</expressionAlias>
         </FactMapping>
+        <FactMapping>
+          <expressionElements>
+            <ExpressionElement>
+              <step>OFFER</step>
+            </ExpressionElement>
+            <ExpressionElement>
+              <step>offerDesc</step>
+            </ExpressionElement>
+          </expressionElements>
+          <expressionIdentifier>
+            <name>1554225033259</name>
+            <type>EXPECT</type>
+          </expressionIdentifier>
+          <factIdentifier>
+            <name>0|2</name>
+            <className>com.myspace.deposit_retention.OFFER</className>
+          </factIdentifier>
+          <className>java.lang.String</className>
+          <factAlias>OFFER</factAlias>
+          <expressionAlias>offerDesc</expressionAlias>
+        </FactMapping>
       </factMappings>
       <dmoSession>default</dmoSession>
       <type>RULE</type>
@@ -122,8 +143,17 @@
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping/expressionIdentifier"/>
             <rawValue class="string">1</rawValue>
           </FactMappingValue>
+          <FactMappingValue>
+            <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/factIdentifier"/>
+            <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[6]/expressionIdentifier"/>
+            <rawValue class="string">Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment</rawValue>
+          </FactMappingValue>
         </factMappingValues>
-        <simulationDescriptor reference="../../../simulationDescriptor"/>
+        <simulationDescriptor>
+          <factMappings/>
+          <dmoSession>default</dmoSession>
+          <type>RULE</type>
+        </simulationDescriptor>
       </Scenario>
     </scenarios>
   </simulation>
