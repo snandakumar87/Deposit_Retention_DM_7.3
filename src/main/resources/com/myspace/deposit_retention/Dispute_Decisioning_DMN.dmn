@@ -189,10 +189,10 @@
       </dmn:rule>
       <dmn:rule id="_EFE05082-BA21-43D9-BBF1-85A56ABE92DE">
         <dmn:inputEntry id="_C424996E-9C9F-44B3-B3C9-E47BEB823EAF">
-          <dmn:text>true</dmn:text>
+          <dmn:text>false</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_DB159E83-441F-4123-ADBC-0617F3521C40">
-          <dmn:text>false</dmn:text>
+          <dmn:text>true</dmn:text>
         </dmn:inputEntry>
         <dmn:inputEntry id="_A11BF889-3C45-40D7-967E-4B57C235A1E7">
           <dmn:text>"SYSTEM_TRIGGER"</dmn:text>
