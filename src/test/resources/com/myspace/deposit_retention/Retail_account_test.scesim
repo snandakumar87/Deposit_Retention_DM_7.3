@@ -172,7 +172,7 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
-            <rawValue class="string">05-03-2019</rawValue>
+            <rawValue class="string">&quot;05-03-2019&quot;</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor>
@@ -215,7 +215,7 @@
           <FactMappingValue>
             <factIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/factIdentifier"/>
             <expressionIdentifier reference="../../../../../simulationDescriptor/factMappings/FactMapping[5]/expressionIdentifier"/>
-            <rawValue class="string">05-02-2019</rawValue>
+            <rawValue class="string">&quot;05-02-2019&quot;</rawValue>
           </FactMappingValue>
         </factMappingValues>
         <simulationDescriptor reference="../../../simulationDescriptor"/>
