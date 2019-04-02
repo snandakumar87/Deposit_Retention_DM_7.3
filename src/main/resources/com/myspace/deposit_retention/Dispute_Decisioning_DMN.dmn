@@ -47,8 +47,7 @@
           <dmn:text>"BYPHONE"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_25D98A8F-6866-4F9C-8A0D-681C48E18E3D" typeRef="Any">
-          <dmn:text>"Enjoy a 2.5% APY on deposits made today"
-</dmn:text>
+          <dmn:text>"Enjoy a 2.5% APY on deposits made today"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_C8F885B5-C421-4700-898E-0C140D8567BF">
@@ -251,7 +250,7 @@
           <dmndi:StrokeColor red="0" green="0" blue="0"/>
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
-        <dc:Bounds x="1075" y="126" width="100" height="50"/>
+        <dc:Bounds x="1099" y="126" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_16B62630-A735-4876-9BF1-6A2D442D7DF2" dmnElementRef="_16B62630-A735-4876-9BF1-6A2D442D7DF2" isCollapsed="false">
@@ -283,11 +282,11 @@
       </dmndi:DMNShape>
       <dmndi:DMNEdge id="dmnedge-_81336FC1-87F7-4B1C-988D-21C7E81D78E6" dmnElementRef="_81336FC1-87F7-4B1C-988D-21C7E81D78E6">
         <di:waypoint x="582" y="151"/>
-        <di:waypoint x="1125" y="151"/>
+        <di:waypoint x="1149" y="151"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_5083FFF7-80A4-4C9C-97C8-3378DE50DB77" dmnElementRef="_5083FFF7-80A4-4C9C-97C8-3378DE50DB77">
         <di:waypoint x="1148" y="409"/>
-        <di:waypoint x="1125" y="151"/>
+        <di:waypoint x="1149" y="151"/>
       </dmndi:DMNEdge>
       <dmndi:DMNEdge id="dmnedge-_D5A4A5A6-910E-486C-A842-9F98059C1D37" dmnElementRef="_D5A4A5A6-910E-486C-A842-9F98059C1D37">
         <di:waypoint x="396.5981308411215" y="409"/>
