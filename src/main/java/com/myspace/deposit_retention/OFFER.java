@@ -10,6 +10,8 @@ public class OFFER implements java.io.Serializable {
 
 	private java.lang.String OFFER_NAME;
 
+	private java.lang.String offerDesc;
+
 	public OFFER() {
 	}
 
@@ -21,8 +23,17 @@ public class OFFER implements java.io.Serializable {
 		this.OFFER_NAME = OFFER_NAME;
 	}
 
-	public OFFER(java.lang.String OFFER_NAME) {
+	public java.lang.String getOfferDesc() {
+		return this.offerDesc;
+	}
+
+	public void setOfferDesc(java.lang.String offerDesc) {
+		this.offerDesc = offerDesc;
+	}
+
+	public OFFER(java.lang.String OFFER_NAME, java.lang.String offerDesc) {
 		this.OFFER_NAME = OFFER_NAME;
+		this.offerDesc = offerDesc;
 	}
 
 }
