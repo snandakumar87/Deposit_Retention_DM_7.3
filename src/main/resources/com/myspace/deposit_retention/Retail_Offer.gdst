@@ -65,63 +65,6 @@
       </window>
       <entryPointName></entryPointName>
     </Pattern52>
-    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
-      <hideColumn>false</hideColumn>
-      <width>-1</width>
-      <header>Payment Due Date</header>
-      <constraintValueType>1</constraintValueType>
-      <parameters/>
-      <definition>
-        <org.drools.workbench.models.datamodel.rule.FactPattern>
-          <constraintList>
-            <constraints>
-              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-                <operator>&gt;</operator>
-                <constraintValueType>6</constraintValueType>
-                <expression>
-                  <parts>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
-                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
-                        <name>EVENT_DATE</name>
-                        <classType>java.util.Date</classType>
-                        <genericType>Date</genericType>
-                      </next>
-                      <name>event</name>
-                      <classType>EventModel</classType>
-                      <genericType>EventModel</genericType>
-                      <factType>EventModel</factType>
-                    </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
-                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
-                  </parts>
-                  <index>2147483647</index>
-                </expression>
-                <parameters/>
-                <factType>Customer_Profile</factType>
-                <fieldName>accountPaymentDueDate</fieldName>
-                <fieldType>Date</fieldType>
-              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
-            </constraints>
-          </constraintList>
-          <factType>Customer_Profile</factType>
-          <isNegated>false</isNegated>
-          <window>
-            <parameters/>
-          </window>
-        </org.drools.workbench.models.datamodel.rule.FactPattern>
-      </definition>
-      <childColumns>
-        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-          <hideColumn>false</hideColumn>
-          <width>183</width>
-          <header>Payment Due Date</header>
-          <constraintValueType>1</constraintValueType>
-          <fieldType>Boolean</fieldType>
-          <parameters/>
-          <varName></varName>
-        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
-      </childColumns>
-    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <insert-fact-column52>
@@ -187,18 +130,12 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueString>THIRD_PARTY_ACCOUNT_PAYMENT</valueString>
+        <valueString>THIRD_PARTY_AUTO_PAY</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
         <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
@@ -233,12 +170,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>MRC_OFFER_2</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -259,12 +190,6 @@
       <value>
         <valueString>ONLINE_LOGIN</valueString>
         <dataType>STRING</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
