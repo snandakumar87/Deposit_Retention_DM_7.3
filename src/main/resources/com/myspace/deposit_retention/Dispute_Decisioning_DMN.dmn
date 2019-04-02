@@ -5,7 +5,7 @@
     <dmn:variable id="_D2809FD9-592B-4EDD-A620-F4E72485FA22" name="Cash Inflow" typeRef="string"/>
   </dmn:inputData>
   <dmn:inputData id="_3430FF7F-F427-4890-901B-F7D39565377B" name="Cash Outflow">
-    <dmn:variable id="_C84D8E20-EC64-41B5-A7A8-36B79B3D4347" name="Cash Outflow" typeRef="Any"/>
+    <dmn:variable id="_C84D8E20-EC64-41B5-A7A8-36B79B3D4347" name="Cash Outflow" typeRef="string"/>
   </dmn:inputData>
   <dmn:decision id="_A214E0A8-763D-428B-B071-488E02A88859" name="Channel Specific Rules">
     <dmn:variable id="_CE9C0B2B-F3DD-4983-BEA0-2CC38E8DD1F3" name="Channel Specific Rules" typeRef="string"/>
