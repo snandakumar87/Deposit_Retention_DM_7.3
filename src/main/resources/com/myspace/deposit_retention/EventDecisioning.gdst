@@ -59,44 +59,69 @@
           <parameters/>
           <binding></binding>
         </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>BOOLEAN</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>100</width>
-          <header>IN_FLOW</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>inFlow</factField>
-          <fieldType>Boolean</fieldType>
-          <operator>==</operator>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
-        <condition-column52>
-          <typedDefaultValue>
-            <valueString></valueString>
-            <dataType>BOOLEAN</dataType>
-            <isOtherwise>false</isOtherwise>
-          </typedDefaultValue>
-          <hideColumn>false</hideColumn>
-          <width>125</width>
-          <header>OUT_FLOW</header>
-          <constraintValueType>1</constraintValueType>
-          <factField>outFlow</factField>
-          <fieldType>Boolean</fieldType>
-          <operator>==</operator>
-          <parameters/>
-          <binding></binding>
-        </condition-column52>
       </conditions>
       <window>
         <parameters/>
       </window>
       <entryPointName></entryPointName>
     </Pattern52>
+    <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
+      <hideColumn>false</hideColumn>
+      <width>-1</width>
+      <header>Payment Due Date</header>
+      <constraintValueType>1</constraintValueType>
+      <parameters/>
+      <definition>
+        <org.drools.workbench.models.datamodel.rule.FactPattern>
+          <constraintList>
+            <constraints>
+              <org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+                <operator>&lt;</operator>
+                <constraintValueType>6</constraintValueType>
+                <expression>
+                  <parts>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                      <next class="org.drools.workbench.models.datamodel.rule.ExpressionField">
+                        <prev class="org.drools.workbench.models.datamodel.rule.ExpressionVariable" reference="../.."/>
+                        <name>accountPaymentDueDate</name>
+                        <classType>java.util.Date</classType>
+                        <genericType>Date</genericType>
+                      </next>
+                      <name>customer</name>
+                      <classType>Customer_Profile</classType>
+                      <genericType>Customer_Profile</genericType>
+                      <factType>Customer_Profile</factType>
+                    </org.drools.workbench.models.datamodel.rule.ExpressionVariable>
+                    <org.drools.workbench.models.datamodel.rule.ExpressionField reference="../org.drools.workbench.models.datamodel.rule.ExpressionVariable/next"/>
+                  </parts>
+                  <index>2147483647</index>
+                </expression>
+                <parameters/>
+                <factType>EventModel</factType>
+                <fieldName>EVENT_DATE</fieldName>
+                <fieldType>Date</fieldType>
+              </org.drools.workbench.models.datamodel.rule.SingleFieldConstraint>
+            </constraints>
+          </constraintList>
+          <factType>EventModel</factType>
+          <isNegated>false</isNegated>
+          <window>
+            <parameters/>
+          </window>
+        </org.drools.workbench.models.datamodel.rule.FactPattern>
+      </definition>
+      <childColumns>
+        <org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+          <hideColumn>false</hideColumn>
+          <width>100</width>
+          <header>Payment Due Date</header>
+          <constraintValueType>1</constraintValueType>
+          <fieldType>Boolean</fieldType>
+          <parameters/>
+          <varName></varName>
+        </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionVariableColumn>
+      </childColumns>
+    </org.drools.workbench.models.guided.dtable.shared.model.BRLConditionColumn>
   </conditionPatterns>
   <actionCols>
     <insert-fact-column52>
@@ -179,12 +204,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>MRC_OFFER</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -209,12 +228,6 @@
       </value>
       <value>
         <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
@@ -261,12 +274,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>MRC_OFFER</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -291,12 +298,6 @@
       </value>
       <value>
         <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
@@ -337,12 +338,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -378,12 +373,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueBoolean>false</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
@@ -414,12 +403,6 @@
       </value>
       <value>
         <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
@@ -466,12 +449,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>REVERSE_FUNDS_OFFER</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -507,12 +484,6 @@
         <isOtherwise>false</isOtherwise>
       </value>
       <value>
-        <valueBoolean>true</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
         <valueString>REVERSE_FUNDS_OFFER</valueString>
         <dataType>STRING</dataType>
         <isOtherwise>false</isOtherwise>
@@ -543,12 +514,6 @@
       </value>
       <value>
         <valueBoolean>false</valueBoolean>
-        <valueString></valueString>
-        <dataType>BOOLEAN</dataType>
-        <isOtherwise>false</isOtherwise>
-      </value>
-      <value>
-        <valueBoolean>true</valueBoolean>
         <valueString></valueString>
         <dataType>BOOLEAN</dataType>
         <isOtherwise>false</isOtherwise>
