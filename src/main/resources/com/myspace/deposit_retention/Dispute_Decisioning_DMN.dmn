@@ -35,7 +35,8 @@
           <dmn:text>"DIGITAL"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_FF503FC6-D609-4F8C-BD00-4F0941E6A2F7" typeRef="Any">
-          <dmn:text>"RETAIL_OFFER_1"</dmn:text>
+          <dmn:text>"Enjoy a 2% APY on deposits made today"
+</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_111963F8-68E0-45B7-A35D-C38BAD17FB13">
@@ -46,7 +47,8 @@
           <dmn:text>"BYPHONE"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_25D98A8F-6866-4F9C-8A0D-681C48E18E3D" typeRef="Any">
-          <dmn:text>"RETAIL_OFFER_2"</dmn:text>
+          <dmn:text>"Enjoy a 2.5% APY on deposits made today"
+</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_C8F885B5-C421-4700-898E-0C140D8567BF">
@@ -57,7 +59,30 @@
           <dmn:text>"EMAIL"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_C64EDD84-2CBF-4366-9DA2-81B6FBC857DD" typeRef="Any">
-          <dmn:text>"RETAIL_OFFER_3"</dmn:text>
+          <dmn:text>"Enjoy a 2% APY on deposits made today"
+</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_FBC95CD8-BCA1-4C91-AC39-C873D2C485DA">
+        <dmn:inputEntry id="_3140CBEE-751D-40B1-9808-0C9A2BA53E8E">
+          <dmn:text>"DEPOSIT_RESTORATION_OFFER"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_BBAEA4E4-2DE8-4330-AC27-CEB0BDD30E16">
+          <dmn:text>"EMAIL"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_E3B93381-1DAB-4978-9E33-FB2ABB64BCB1">
+          <dmn:text>"Come back today for 2% APY on deposits"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
+      <dmn:rule id="_59387D20-15B5-4F0C-9B27-CE79FEEC87F8">
+        <dmn:inputEntry id="_37BD17FC-F05D-4D4D-A71B-AC77D8559FC3">
+          <dmn:text>"DEPOSIT_RESTORATION_OFFER"</dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F57F4EF3-A93E-4AE1-9394-A4E448DD8919">
+          <dmn:text>-</dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_1FC35CE8-F647-4890-8900-27D43A43652A">
+          <dmn:text>"Come back today for 1.5% APY on deposits"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
     </dmn:decisionTable>
@@ -186,7 +211,13 @@
     <dmndi:DMNDiagram>
       <di:extension>
         <kie:ComponentsWidthsExtension>
-          <kie:ComponentWidths dmnElementRef="_06C3A48D-586E-4201-AFD0-09333DE9C8BD"/>
+          <kie:ComponentWidths dmnElementRef="_06C3A48D-586E-4201-AFD0-09333DE9C8BD">
+            <kie:width>50.0</kie:width>
+            <kie:width>274.0</kie:width>
+            <kie:width>100.0</kie:width>
+            <kie:width>217.0</kie:width>
+            <kie:width>100.0</kie:width>
+          </kie:ComponentWidths>
           <kie:ComponentWidths dmnElementRef="_18EEFD97-DF69-401D-A3D3-BFE459150D86">
             <kie:width>50.0</kie:width>
             <kie:width>165.0</kie:width>
