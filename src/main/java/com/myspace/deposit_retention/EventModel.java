@@ -11,6 +11,8 @@ public class EventModel implements java.io.Serializable {
 	private java.lang.String EVENT;
 	private java.util.Date EVENT_DATE;
 
+	private java.lang.String channel;
+
 	public EventModel() {
 	}
 
@@ -30,9 +32,19 @@ public class EventModel implements java.io.Serializable {
 		this.EVENT_DATE = EVENT_DATE;
 	}
 
-	public EventModel(java.lang.String EVENT, java.util.Date EVENT_DATE) {
+	public java.lang.String getChannel() {
+		return this.channel;
+	}
+
+	public void setChannel(java.lang.String channel) {
+		this.channel = channel;
+	}
+
+	public EventModel(java.lang.String EVENT, java.util.Date EVENT_DATE,
+			java.lang.String channel) {
 		this.EVENT = EVENT;
 		this.EVENT_DATE = EVENT_DATE;
+		this.channel = channel;
 	}
 
 }
