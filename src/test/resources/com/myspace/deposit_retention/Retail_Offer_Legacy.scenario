@@ -1,0 +1,13 @@
+<scenario>
+  <name>Retail_Offer_Legacy</name>
+  <maxRuleFirings>100000</maxRuleFirings>
+  <globals/>
+  <fixtures/>
+  <rules/>
+  <inclusive>false</inclusive>
+  <packageName>com.myspace.deposit_retention</packageName>
+  <imports>
+    <imports/>
+  </imports>
+  <ksessions/>
+</scenario>
