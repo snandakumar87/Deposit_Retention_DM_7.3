@@ -28,7 +28,7 @@
       <isModify>false</isModify>
     </fact-data>
     <execution-trace>
-      <executionTimeResult>30</executionTimeResult>
+      <executionTimeResult>71</executionTimeResult>
       <numberOfRulesFired>2</numberOfRulesFired>
     </execution-trace>
     <expect-fact>
@@ -43,9 +43,10 @@
         </expect-field>
         <expect-field>
           <fieldName>offerDesc</fieldName>
-          <expected>Enjoy$225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment</expected>
-          <successResult>true</successResult>
-          <explanation>[OFFER] field [offerDesc] was [Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment].</explanation>
+          <expected>Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment</expected>
+          <actualResult>Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment</actualResult>
+          <successResult>false</successResult>
+          <explanation>[OFFER] field [offerDesc] was [Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment] expected [Enjoy$225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
@@ -54,7 +55,7 @@
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
-  <lastRunResult>2019-04-03 11:03:34.65 UTC</lastRunResult>
+  <lastRunResult>2019-04-03 11:03:44.33 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.deposit_retention</packageName>
