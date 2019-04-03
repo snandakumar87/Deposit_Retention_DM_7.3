@@ -210,6 +210,12 @@
   <dmn:inputData id="_C87FC47A-3DDA-49E4-BDDB-FBBA42886CCD" name="Channel">
     <dmn:variable id="_282CBF5A-C410-4634-8BC5-47B4BC92BD13" name="Channel" typeRef="string"/>
   </dmn:inputData>
+  <dmn:textAnnotation id="_1C441344-58C4-4961-84D2-76A6E2402F4A" textFormat="text/plain">
+    <dmn:text>Channel Overrides</dmn:text>
+  </dmn:textAnnotation>
+  <dmn:textAnnotation id="_52B70F6A-6F8C-4C54-8375-B6D3FA6C2D0D" textFormat="text/plain">
+    <dmn:text>Offer Evaluation</dmn:text>
+  </dmn:textAnnotation>
   <dmndi:DMNDI>
     <dmndi:DMNDiagram>
       <di:extension>
@@ -267,6 +273,15 @@
         <dc:Bounds x="346.5981308411215" y="389" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_1C441344-58C4-4961-84D2-76A6E2402F4A" dmnElementRef="_1C441344-58C4-4961-84D2-76A6E2402F4A" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="1006.0296214161256" y="70" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_A5B0C293-F704-4299-98D4-A2A0F9945BE6" dmnElementRef="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="200" green="244" blue="160"/>
@@ -274,6 +289,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="532" y="126" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_52B70F6A-6F8C-4C54-8375-B6D3FA6C2D0D" dmnElementRef="_52B70F6A-6F8C-4C54-8375-B6D3FA6C2D0D" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="411" y="125" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_C87FC47A-3DDA-49E4-BDDB-FBBA42886CCD" dmnElementRef="_C87FC47A-3DDA-49E4-BDDB-FBBA42886CCD" isCollapsed="false">
