@@ -38,7 +38,7 @@
           <dmn:text>"DIGITAL"</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_FF503FC6-D609-4F8C-BD00-4F0941E6A2F7" typeRef="Any">
-          <dmn:text>"Enjoy a 2% APY on deposits made today1"</dmn:text>
+          <dmn:text>"Enjoy a 2% APY on deposits made today"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
       <dmn:rule id="_111963F8-68E0-45B7-A35D-C38BAD17FB13">
