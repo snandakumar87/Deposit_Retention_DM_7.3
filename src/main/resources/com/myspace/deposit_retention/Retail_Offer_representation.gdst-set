@@ -2,19 +2,6 @@
   <entries>
     <entry>
       <pathHead class="org.uberfire.backend.vfs.PathFactory$PathImpl">
-        <uri>default://master@MySpace/Deposit_Retention_DM/src/main/resources/com/myspace/deposit_retention/RETAIL_OFFER_DESC.gdst</uri>
-        <fileName>RETAIL_OFFER_DESC.gdst</fileName>
-        <attributes/>
-        <hasVersionSupport>true</hasVersionSupport>
-      </pathHead>
-      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
-        <uri>default://4f781bed7f0a31a99aa7504cce63cfa09cbdfbd7@MySpace/Deposit_Retention_DM/src/main/resources/com/myspace/deposit_retention/RETAIL_OFFER_DESC.gdst</uri>
-        <fileName>RETAIL_OFFER_DESC.gdst</fileName>
-        <hasVersionSupport>true</hasVersionSupport>
-      </pathVersion>
-    </entry>
-    <entry>
-      <pathHead class="org.uberfire.backend.vfs.PathFactory$PathImpl">
         <uri>default://master@MySpace/Deposit_Retention_DM/src/main/resources/com/myspace/deposit_retention/Retail_Offer.gdst</uri>
         <fileName>Retail_Offer.gdst</fileName>
         <attributes/>
@@ -23,6 +10,19 @@
       <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
         <uri>default://4e5686142a1f7a2bc666a77d42de30b9049cf918@MySpace/Deposit_Retention_DM/src/main/resources/com/myspace/deposit_retention/Retail_Offer.gdst</uri>
         <fileName>Retail_Offer.gdst</fileName>
+        <hasVersionSupport>false</hasVersionSupport>
+      </pathVersion>
+    </entry>
+    <entry>
+      <pathHead class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://master@MySpace/Deposit_Retention_DM/src/main/resources/com/myspace/deposit_retention/RETAIL_OFFER_DESC.gdst</uri>
+        <fileName>RETAIL_OFFER_DESC.gdst</fileName>
+        <attributes/>
+        <hasVersionSupport>true</hasVersionSupport>
+      </pathHead>
+      <pathVersion class="org.uberfire.backend.vfs.PathFactory$PathImpl">
+        <uri>default://4f781bed7f0a31a99aa7504cce63cfa09cbdfbd7@MySpace/Deposit_Retention_DM/src/main/resources/com/myspace/deposit_retention/RETAIL_OFFER_DESC.gdst</uri>
+        <fileName>RETAIL_OFFER_DESC.gdst</fileName>
         <hasVersionSupport>true</hasVersionSupport>
       </pathVersion>
     </entry>
