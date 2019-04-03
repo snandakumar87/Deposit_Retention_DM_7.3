@@ -1,14 +1,17 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="https://github.com/kiegroup/drools/kie-dmn/_73328450-AA85-4769-8D87-AAA96AE9F8E7" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" id="_69976D01-B650-4FF6-BF65-26E422BA572D" name="Event" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="https://github.com/kiegroup/drools/kie-dmn/_73328450-AA85-4769-8D87-AAA96AE9F8E7">
   <dmn:extensionElements/>
+  <dmn:itemDefinition id="_D3CEF5F9-5AAE-4E94-831B-98C9BE1E25C5" name="Deposit Retention" isCollection="false">
+    <dmn:typeRef>string</dmn:typeRef>
+    <dmn:allowedValues kie:constraintType="enumeration" id="_F6524C5A-0940-46D2-B6BD-AE493CFACA8A">
+      <dmn:text>"DEPOSIT_RETENTION_OFFER", "DEPOSIT_RESTORATION_OFFER"</dmn:text>
+    </dmn:allowedValues>
+  </dmn:itemDefinition>
   <dmn:inputData id="_AD3A626C-36A8-4565-BB71-A57336655A48" name="Cash Inflow">
     <dmn:variable id="_D2809FD9-592B-4EDD-A620-F4E72485FA22" name="Cash Inflow" typeRef="boolean"/>
   </dmn:inputData>
   <dmn:inputData id="_3430FF7F-F427-4890-901B-F7D39565377B" name="Cash Outflow">
     <dmn:variable id="_C84D8E20-EC64-41B5-A7A8-36B79B3D4347" name="Cash Outflow" typeRef="boolean"/>
-  </dmn:inputData>
-  <dmn:inputData id="_16B62630-A735-4876-9BF1-6A2D442D7DF2" name="Event">
-    <dmn:variable id="_0B38E26E-2562-470E-9193-06151F2FC639" name="Event" typeRef="string"/>
   </dmn:inputData>
   <dmn:decision id="_A214E0A8-763D-428B-B071-488E02A88859" name="Channel Specific Rules">
     <dmn:variable id="_CE9C0B2B-F3DD-4983-BEA0-2CC38E8DD1F3" name="Channel Specific Rules" typeRef="string"/>
@@ -87,8 +90,11 @@
       </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
+  <dmn:inputData id="_16B62630-A735-4876-9BF1-6A2D442D7DF2" name="Event">
+    <dmn:variable id="_0B38E26E-2562-470E-9193-06151F2FC639" name="Event" typeRef="string"/>
+  </dmn:inputData>
   <dmn:decision id="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" name="Deposit Retention">
-    <dmn:variable id="_613FFB0B-9C65-4B22-9AF4-57AA4E0CCB04" name="Deposit Retention" typeRef="string"/>
+    <dmn:variable id="_613FFB0B-9C65-4B22-9AF4-57AA4E0CCB04" name="Deposit Retention" typeRef="Deposit Retention"/>
     <dmn:informationRequirement id="_D5A4A5A6-910E-486C-A842-9F98059C1D37">
       <dmn:requiredInput href="#_16B62630-A735-4876-9BF1-6A2D442D7DF2"/>
     </dmn:informationRequirement>
@@ -114,7 +120,7 @@
           <dmn:text>Event</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_8DE18532-1732-4E44-8265-0528BB02252F" typeRef="string"/>
+      <dmn:output id="_8DE18532-1732-4E44-8265-0528BB02252F" typeRef="Deposit Retention"/>
       <dmn:rule id="_0D754585-3028-4DEF-A1FD-CD6EBC124EA7">
         <dmn:inputEntry id="_E346985B-38CE-4B79-A2BD-56B31135BC29">
           <dmn:text>true</dmn:text>
@@ -199,6 +205,20 @@
           <dmn:text>"DEPOSIT_RESTORATION_OFFER"</dmn:text>
         </dmn:outputEntry>
       </dmn:rule>
+      <dmn:rule id="_AB22361B-B012-4137-AE78-E3BA6C8B655A">
+        <dmn:inputEntry id="_7AC835A5-9EA3-4948-84F3-42BBBE093C05">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_F22CBD56-7D97-49AB-9B06-C65639BF258F">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:inputEntry id="_546F2DA6-7737-48F7-AE3F-553DFAAC33F8">
+          <dmn:text></dmn:text>
+        </dmn:inputEntry>
+        <dmn:outputEntry id="_354566CE-B701-4E6C-80B3-4B382615F8F3">
+          <dmn:text>"DPO"</dmn:text>
+        </dmn:outputEntry>
+      </dmn:rule>
     </dmn:decisionTable>
   </dmn:decision>
   <dmn:inputData id="_C87FC47A-3DDA-49E4-BDDB-FBBA42886CCD" name="Channel">
@@ -243,15 +263,6 @@
         <dc:Bounds x="808" y="379" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
-      <dmndi:DMNShape id="dmnshape-_16B62630-A735-4876-9BF1-6A2D442D7DF2" dmnElementRef="_16B62630-A735-4876-9BF1-6A2D442D7DF2" isCollapsed="false">
-        <dmndi:DMNStyle>
-          <dmndi:FillColor red="255" green="255" blue="255"/>
-          <dmndi:StrokeColor red="0" green="0" blue="0"/>
-          <dmndi:FontColor red="0" green="0" blue="0"/>
-        </dmndi:DMNStyle>
-        <dc:Bounds x="346.5981308411215" y="384" width="100" height="50"/>
-        <dmndi:DMNLabel/>
-      </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_A214E0A8-763D-428B-B071-488E02A88859" dmnElementRef="_A214E0A8-763D-428B-B071-488E02A88859" isCollapsed="false">
         <dmndi:DMNStyle>
           <dmndi:FillColor red="255" green="255" blue="255"/>
@@ -259,6 +270,15 @@
           <dmndi:FontColor red="0" green="0" blue="0"/>
         </dmndi:DMNStyle>
         <dc:Bounds x="1099" y="126" width="100" height="50"/>
+        <dmndi:DMNLabel/>
+      </dmndi:DMNShape>
+      <dmndi:DMNShape id="dmnshape-_16B62630-A735-4876-9BF1-6A2D442D7DF2" dmnElementRef="_16B62630-A735-4876-9BF1-6A2D442D7DF2" isCollapsed="false">
+        <dmndi:DMNStyle>
+          <dmndi:FillColor red="255" green="255" blue="255"/>
+          <dmndi:StrokeColor red="0" green="0" blue="0"/>
+          <dmndi:FontColor red="0" green="0" blue="0"/>
+        </dmndi:DMNStyle>
+        <dc:Bounds x="346.5981308411215" y="384" width="100" height="50"/>
         <dmndi:DMNLabel/>
       </dmndi:DMNShape>
       <dmndi:DMNShape id="dmnshape-_A5B0C293-F704-4299-98D4-A2A0F9945BE6" dmnElementRef="_A5B0C293-F704-4299-98D4-A2A0F9945BE6" isCollapsed="false">
