@@ -1,13 +1,53 @@
 <scenario>
-  <name>Retail_Offer_Test</name>
+  <name>Retail_Offer_Test.scenario</name>
   <maxRuleFirings>100000</maxRuleFirings>
   <globals/>
-  <fixtures/>
+  <fixtures>
+    <fact-data>
+      <type>Customer_Profile</type>
+      <fieldData>
+        <field-data>
+          <name>thirdPartyTransfer</name>
+          <value>true</value>
+          <nature>1</nature>
+        </field-data>
+      </fieldData>
+      <name>customer</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <fact-data>
+      <type>EventModel</type>
+      <fieldData>
+        <field-data>
+          <name>EVENT</name>
+          <value>ONLINE_LOGIN</value>
+          <nature>4</nature>
+        </field-data>
+      </fieldData>
+      <name>event</name>
+      <isModify>false</isModify>
+    </fact-data>
+    <execution-trace/>
+    <expect-fact>
+      <fieldValues>
+        <expect-field>
+          <fieldName>OFFER_NAME</fieldName>
+          <expected>MRC_OFFER_1</expected>
+          <operator>==</operator>
+          <nature>1</nature>
+        </expect-field>
+      </fieldValues>
+      <name>OFFER</name>
+      <anonymous>true</anonymous>
+    </expect-fact>
+  </fixtures>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.deposit_retention</packageName>
   <imports>
     <imports/>
   </imports>
-  <ksessions/>
+  <ksessions>
+    <string>defaultKieSession</string>
+  </ksessions>
 </scenario>
