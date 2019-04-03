@@ -27,26 +27,34 @@
       <name>eventModel</name>
       <isModify>false</isModify>
     </fact-data>
-    <execution-trace/>
+    <execution-trace>
+      <executionTimeResult>30</executionTimeResult>
+      <numberOfRulesFired>2</numberOfRulesFired>
+    </execution-trace>
     <expect-fact>
       <fieldValues>
         <expect-field>
           <fieldName>OFFER_NAME</fieldName>
-          <expected>MRC_OFFER_1</expected>
+          <expected>MRC_OFFER_2</expected>
+          <successResult>true</successResult>
+          <explanation>[OFFER] field [OFFER_NAME] was [MRC_OFFER_1].</explanation>
           <operator>==</operator>
           <nature>1</nature>
         </expect-field>
         <expect-field>
           <fieldName>offerDesc</fieldName>
           <expected>Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment</expected>
+          <successResult>true</successResult>
+          <explanation>[OFFER] field [offerDesc] was [Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment].</explanation>
           <operator>==</operator>
-          <nature>0</nature>
+          <nature>1</nature>
         </expect-field>
       </fieldValues>
       <name>OFFER</name>
       <anonymous>true</anonymous>
     </expect-fact>
   </fixtures>
+  <lastRunResult>2019-04-03 15:21:03.896 UTC</lastRunResult>
   <rules/>
   <inclusive>false</inclusive>
   <packageName>com.myspace.deposit_retention</packageName>
