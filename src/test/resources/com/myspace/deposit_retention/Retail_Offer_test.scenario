@@ -38,7 +38,7 @@
         </expect-field>
         <expect-field>
           <fieldName>offerDesc</fieldName>
-          <expected></expected>
+          <expected>Enjoy $225 on us when you open a new checking account with us today! Make sure to use our Retail Account for the next payment</expected>
           <operator>==</operator>
           <nature>0</nature>
         </expect-field>
