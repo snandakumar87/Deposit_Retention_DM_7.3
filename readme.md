@@ -9,3 +9,4 @@ Demonstrates the use of
 4) DMN (Decision Model Notation)
 5) Enums
 
+Project is developed on the 7.3 Version of DM, needs the latest for demonstrating the DMN and Scenario test features.
